@@ -18,7 +18,7 @@ class Contact extends React.Component{
                             <input type="text" placeholder="სახელი"/>
                             <input type="text" placeholder="ელექტრონული ფოსტა"/>
                             <textarea type="text" placeholder="შეკითხვა" className="redEgg"/>
-                            <button>გაგზავნა</button>
+                            <input className="button" type="submit" value="გაგზავნა"/>
                         </form>
                     </div>
                 </div>

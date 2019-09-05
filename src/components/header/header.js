@@ -81,7 +81,7 @@ class Header extends React.Component{
                             <form>
                                 <input type="text" placeholder="სახელი"/>
                                 <input type="text" placeholder="ტელეფონის ნომერი"/>
-                                <button onClick={this.handlePopUp}>მოითხოვე ზარი</button>
+                                <input onClick={this.handlePopUp} className="button" type="submit" value="მოითხოვე ზარი"/>
                             </form>
                         </div>
                     </div>

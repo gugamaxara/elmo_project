@@ -265,7 +265,7 @@
     font-size: 16px;
 }
 
-.header .headerHeart .rightside .rightsideInfo form button{
+.header .headerHeart .rightside .rightsideInfo form .button{
     display: block;
     width: 100%;
     height: 48px;
@@ -279,7 +279,7 @@
     line-height: 48px;
 }
 
-.header .headerHeart .rightside .rightsideInfo form button:hover{
+.header .headerHeart .rightside .rightsideInfo form .button:hover{
     background-color: transparent;
     color: #eedb3b;
     border: 2px solid #eedb3b;
