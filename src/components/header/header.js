@@ -13,16 +13,47 @@ class Header extends React.Component{
     constructor(){
         super()
         this.state = {
+            customer_name: '',
+            customer_phone: '',
             showPopUp: false
         }
     }
 
+    handleTimeout = (el, txt) => {
+        return setTimeout(() => {
+            el.placeholder = txt
+            el.style.backgroundColor = "white"
+        }, 3000)
+    }
+    
     handlePopUp = e => {
         e.preventDefault();
+        var customer_name = this.refs.customer_name
+        var customer_phone = this.refs.customer_phone
+        var customer_phone_validation = (/^\d+$/.test(this.state.customer_phone)) ? true : false
+        if(!this.state.customer_name){
+            customer_name.placeholder = "გთხოვთ შეიყვანოთ სახელი"
+            customer_name.style.backgroundColor = 'red'
+            this.handleTimeout(this.refs.customer_name, "სახელი")
+        }
+        else if(!customer_phone_validation || this.state.customer_phone.length < 9 || !this.state.customer_phone.startsWith("5")){
+            customer_phone.placeholder = "გთხოვთ სწორად შეიყვანოთ ტელეფონი"
+            customer_phone.style.backgroundColor = "red"
+            this.handleTimeout(this.refs.customer_phone, "ტელეფონის ნომერი")
+        }
+        else{
+            this.setState({
+                showPopUp: !this.state.showPopUp
+            })
+            var call_form = document.querySelector('div.rightsideInfo form')
+            call_form.reset()
+        }
+    }
+
+    handleRequestCallFields = event => {
         this.setState({
-            showPopUp: !this.state.showPopUp
+            [event.target.name]: event.target.value
         })
-        
     }
 
     handleScrollView = id =>{
@@ -79,9 +110,10 @@ class Header extends React.Component{
                             <h2>გესაჭიროება კონსულტაცია?</h2>
                             <h3>დასაკავშირებლად შეაფსეთ ფორმა</h3>
                             <form>
-                                <input required type="text" placeholder="სახელი"/>
-                                <input required type="text" placeholder="ტელეფონის ნომერი"/>
-                                <button onClick={this.handlePopUp}>მოითხოვე ზარი</button>
+                                <input onChange={this.handleRequestCallFields} type="text" ref="customer_name" name="customer_name" maxLength="50" placeholder="სახელი"/>
+                                <input onChange={this.handleRequestCallFields} type="text" ref="customer_phone" name="customer_phone" maxLength="9" placeholder="ტელეფონის ნომერი"/>
+                                {/* <input required type="submit" value="sadas"/> */}
+                                <input required onClick={(e) => this.handlePopUp(e)} className="button" type="submit" value="მოითხოვე ზარი"/>
                             </form>
                         </div>
                     </div>
