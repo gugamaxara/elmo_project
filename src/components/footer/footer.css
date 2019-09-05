@@ -1,0 +1,139 @@
+.footer{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 174px;
+    background: #464247;
+}
+
+.footer .footerNavigation{
+    display: block;
+    width: 82%;
+    height: 120px;
+    position: absolute;
+    top: 30px;
+    left: 120px;
+}
+
+.footer .footerNavigation .companyName{
+    display: block;
+    float: left;
+    width: 18%;
+    height: 48px;
+}
+
+.footer .footerNavigation .companyName h1{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+}
+
+
+.footer .footerNavigation .navBar{
+    display: block;
+    float: left;
+    width: 14%;
+    height: 48px;
+    margin-left: 13%;
+}
+
+.footer .footerNavigation .navBar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.footer .footerNavigation .navBar ul li{
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.footer .footerNavigation .navBar ul li.redEgg{
+    margin: 8px 0 0 0;
+}
+
+.footer .footerNavigation .navBar ul li:hover{
+    color: #eedb3b;
+} 
+
+
+.footer .footerNavigation .footerContact{
+    display: block;
+    float: left;
+    width: 18%;
+    height: 48px;
+    font-size: 14px;
+    color: #ffffff;
+    margin-left: 4%;
+}
+
+
+.footer .footerNavigation .footerContact span{
+    display: block;
+    width: 100%;
+    height: auto;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer .footerNavigation .footerContact span.redEgg{
+    margin: 16px 0 0 0;
+}
+
+.footer .footerNavigation .orderButton{
+    display: block;
+    float: left;
+    width: 20%;
+    height: 48px;
+    margin-left: 13%;
+}
+
+
+.footer .footerNavigation .orderButton a{
+    display: block;
+    float: right;
+    width: 160px;
+    height: 48px;
+    background-color: #eedb3b;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 48px;
+    font-family: 'BPG Nino Mtavruli';
+    cursor: pointer;
+}
+
+.footer .footerNavigation .orderButton a:hover{
+    background-color: transparent;
+    color: #eedb3b;
+    border: 2px solid #eedb3b;
+}
+
+.footer .footerNavigation .footerCopyright{
+    display: block;
+    position: absolute;
+    top: 106px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    text-align: center;
+}
+
+.footer .footerNavigation .footerCopyright span{
+    color: #ffffff;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+    font-size: 14px;
+}

@@ -1,0 +1,286 @@
+.header{
+    display: block;
+    width: 100%;
+    height: 770px;
+    position: relative;
+}
+
+.header img{
+    width: 100%;
+    height: 100%;
+}
+
+.header .socialNetwork{
+    display: block;
+    width: 80%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    font-size: 14pt;
+    line-height: 14pt;
+}
+
+.header .socialNetwork ul{
+    list-style-type: none;
+    margin: 0 0 0 40px;
+    padding-top: 5px;
+    float: right;
+    height: 75%;
+    padding: 5px 0 5px 5px;
+}
+
+.header .socialNetwork ul li{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+    height: 67%;
+    margin: 0 0 0 5px;
+    padding: 5px;
+}
+
+.header .socialNetwork ul li .icon{
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+}
+
+.header .socialNetwork ul li .icon:hover{
+    color: #eedb3b;
+}
+
+.header .socialNetwork span{
+    font-weight: normal;
+    color: white;
+    float: right;
+    line-height: 14pt;
+    padding-top: 12px;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+    font-size: 14px;
+}
+
+.header .navigation{
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 96px;
+    background-color: #ffffff;
+}
+
+.header .navigation .wrapper{
+    display: block;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header .navigation .wrapper .companyName{
+    display: block;
+    float: left;
+    width: 18%;
+    height: 72px;
+    padding-top: 24px;
+}
+
+.header .navigation .wrapper .companyName h1{
+    margin: 0;
+    padding: 0;
+    color: #745c5c;
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+}
+
+.header .navigation .wrapper .navBar{
+    display: block;
+    float: left;
+    width: 42%;
+    height: 100%;
+    margin-left: 8%;
+}
+
+.header .navigation .wrapper .navBar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header .navigation .wrapper .navBar ul li{
+    display: block;
+    float: left;
+    width: 32%;
+    height: 30px;
+    margin-right: 2%;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 40px 0 0 0;
+    color: #745c5c;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+    cursor: pointer;
+}
+
+.header .navigation .wrapper .navBar ul li:hover{
+    color: #eedb3b;
+}
+
+.header .navigation .wrapper .orderButton{
+    display: block;
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin-left: 12%;
+}
+
+.header .navigation .wrapper .orderButton a{
+    display: block;
+    float: right;
+    width: 70%;
+    height: 24px;
+    background-color: #eedb3b;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 0;
+    line-height: 30px;
+    margin-top: 30px;
+    font-family: 'BPG Nino Mtavruli';
+    cursor: pointer;
+}
+
+.header .navigation .wrapper .orderButton a:hover{
+    background-color: transparent;
+    color: #00534f;
+    border: 2px solid #00534f;
+}
+
+.header .headerHeart{
+    display: block;
+    width: 80%;
+    height: 480px;
+    margin: 0 auto;
+    position: absolute;
+    left: 10%;
+    top: 208px;
+
+}
+
+.header .headerHeart .leftside{
+    display: block;
+    float: left;
+    width: 48%;
+    height: 100%;
+    margin-right: 4%;
+}
+
+.header .headerHeart .leftside .leftsideInfo{
+    display: block;
+    width: 90%;
+    height: 60%;
+    margin: 13% auto 25%;
+}
+
+.header .headerHeart .leftside .leftsideInfo h2{
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: bolder;
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-size: 48px;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+}
+
+.header .headerHeart .leftside .leftsideInfo h3{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-weight: normal;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+    font-size: 30px;
+}
+
+.header .headerHeart .rightside{
+    display: block;
+    float: left;
+    width: 48%;
+    height: 100%;
+}
+
+
+.header .headerHeart .rightside .rightsideInfo{
+    display: block;
+    width: 85%;
+    height: 80%;
+    margin: 13% auto;
+}
+
+.header .headerHeart .rightside .rightsideInfo h2{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+    padding: 0;
+}
+
+.header .headerHeart .rightside .rightsideInfo h3{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-weight: normal;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+    font-size: 16px;
+    padding: 10px;
+}
+
+.header .headerHeart .rightside .rightsideInfo form{
+    display: block;
+    width: 80%;
+    height: 216px;
+    margin: 24px auto;
+}
+
+.header .headerHeart .rightside .rightsideInfo form input{
+    display: block;
+    width: 94%;
+    height: 48px;
+    margin-bottom: 24px;
+    color: black;
+    padding-left: 5%;
+    background-color: #ffffff;
+    border: none;
+    font-weight: normal;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+    font-size: 16px;
+}
+
+.header .headerHeart .rightside .rightsideInfo form button{
+    display: block;
+    width: 100%;
+    height: 48px;
+    margin-top: 48px;
+    background-color: #00534f;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+    line-height: 48px;
+}
+
+.header .headerHeart .rightside .rightsideInfo form button:hover{
+    background-color: transparent;
+    color: #eedb3b;
+    border: 2px solid #eedb3b;
+}
