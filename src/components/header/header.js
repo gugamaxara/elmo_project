@@ -79,8 +79,8 @@ class Header extends React.Component{
                             <h2>გესაჭიროება კონსულტაცია?</h2>
                             <h3>დასაკავშირებლად შეაფსეთ ფორმა</h3>
                             <form>
-                                <input type="text" placeholder="სახელი"/>
-                                <input type="text" placeholder="ტელეფონის ნომერი"/>
+                                <input required type="text" placeholder="სახელი"/>
+                                <input required type="text" placeholder="ტელეფონის ნომერი"/>
                                 <button onClick={this.handlePopUp}>მოითხოვე ზარი</button>
                             </form>
                         </div>
