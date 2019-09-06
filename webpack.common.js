@@ -3,7 +3,7 @@ var hwp = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-    entry: path.join(__dirname, '/src/index.js'),
+    entry: ['@babel/polyfill', path.join(__dirname, '/src/index.js')],
     output: {
         filename: 'bundle.js',
         publicPath: '/',
@@ -48,5 +48,6 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "style.css"
         })
-    ]
+    ],
+    watch: true
 }
