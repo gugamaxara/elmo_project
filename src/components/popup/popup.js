@@ -36,7 +36,6 @@ export class MobilePopup extends React.Component{
   
   render(){
       return (
-          <div className='mobile_popup'>
             <div className='mobile_popup_inner'>
               <div className="mobile_menu">
                 <ul>
@@ -47,7 +46,6 @@ export class MobilePopup extends React.Component{
                 <button onClick={() => this.handleScrollView("order-page")}>შეკვეთა</button>
               </div>
             </div>
-          </div>
         );
   }
 }
