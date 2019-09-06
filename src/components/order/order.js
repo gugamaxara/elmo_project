@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./order.css";
+import "./mobile-order.css";
 
 import {OrderPoppup} from "../../components/popup/popup"
 

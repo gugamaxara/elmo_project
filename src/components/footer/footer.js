@@ -1,6 +1,11 @@
 import React from "react";
+import { faFacebook, faGooglePlus } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./footer.css";
+import "./mobile-footer.css";
+
+import Logo from "../../image/logo2.png"
 
 class Footer extends React.Component{
 
@@ -14,7 +19,7 @@ class Footer extends React.Component{
             <div className="footer">
                 <div className="footerNavigation">
                     <div className="companyName">
-                        <h1>კარგი ლოგოტიპი</h1>
+                        <img src={Logo} alt="company logo"/>
                     </div>
                     <div className="navBar">
                         <ul>
@@ -29,6 +34,20 @@ class Footer extends React.Component{
                     <div className="orderButton">
                         <a  onClick={() => this.handleScrollView("order-page")}>შეკვეთა</a>
                     </div>
+                    <div className="socialNetwork">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com">
+                                        <FontAwesomeIcon icon={faFacebook} className="icon"/> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.google.com">
+                                        <FontAwesomeIcon icon={faGooglePlus} className="icon"/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     <div className="footerCopyright">
                             <span>2019 რამე სახელი </span>
                     </div>

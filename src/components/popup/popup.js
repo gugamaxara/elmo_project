@@ -40,5 +40,24 @@ export class OrderPoppup extends React.Component{
     }
 }
 
+export class MobilePopup extends React.Component{
+  render(){
+      return (
+          <div className='popup'>
+            <div className='mobile_popup_inner'>
+              {/* <div className="mobile-menu">
+                <ul>
+                  <li>ჩვენს შესახებ</li>
+                  <li>სერვისები</li>
+                  <li>როგორ დავიწყოთ?</li>
+                </ul>
+                <button>შეკვეთა</button>
+              </div> */}
+            </div>
+          </div>
+        );
+  }
+}
+
 
 

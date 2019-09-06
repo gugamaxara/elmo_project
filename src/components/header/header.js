@@ -3,10 +3,17 @@ import { faFacebook, faGooglePlus } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./header.css"
+import "./mobile-header.css"
 
 import headerImage from "../../image/fon.png";
+import headerMobileImage from "../../image//mobileHeaderImage.png"
+import Menu from "../../image/menu.png"
+import Phone from "../../image/phone.png";
+import Mail from "../../image/mail.png"
+import Logo from "../../image/logo.png"
 
-import {CallPoppup} from "../../components/popup/popup"
+import {CallPoppup, MobilePopup} from "../../components/popup/popup"
+
 
 
 class Header extends React.Component{
@@ -33,9 +40,30 @@ class Header extends React.Component{
     render(){
         return(
             <div className="header">
-                
                 {this.state.showPopUp ? <CallPoppup closeButton={this.handlePopUp}/> : null}
-                <img src={headerImage} alt="header image"/>
+                <div className="mobileHeader">
+                    <div className="wrapper">
+                        <div className="menuLogo">
+                            <img src={Menu} alt="menu icon"  onClick={this.handlePopUp}/>
+                        </div>
+                        <div className="companyLogo">
+                            <img src={Logo} alt="company logo"/>
+                        </div>
+                        <div className="icons">
+                            <ul>
+                                <li>
+                                    <img src={Phone} alt="phone icon"/>
+                                </li>
+                                <li>
+                                    <img src={Mail} alt="mail icon"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <img src={headerImage} alt="header image" className="headerImage"/>
+                <img src={headerMobileImage} className="headerMobileImage"/>
                 <div className="socialNetwork">
                     <ul>
                         <li>
@@ -54,7 +82,7 @@ class Header extends React.Component{
                 <div className="navigation">
                     <div className="wrapper">
                        <div className="companyName">
-                           <h1>კარგი ლოგოტიპი</h1>
+                           <img src={Logo} alt="company logo"/>
                        </div>
                         <div className="navBar">
                                 <ul>
@@ -70,8 +98,8 @@ class Header extends React.Component{
                 <div className="headerHeart">
                     <div className="leftside">
                         <div className="leftsideInfo">
-                            <h2>მაღალი ხარისხი მისაღებ ფასებში, თბილისში</h2>
-                            <h3>ჩვენ გთავატობთ სწრაფ და ხარისხიან სერვისს, ასევე გარანტიას ნებისმიერი ტიპის სამუშაოზე</h3>
+                            <h2>მაღალი ხარისხი მისაღებ ფასებში თბილისში</h2>
+                            <h3>ჩვენ გთავაზობთ სწრაფ და ხარისხიან სერვისს, ასევე გარანტიას ნებისმიერი ტიპის სამუშაოზე</h3>
                         </div>
                     </div>
                     <div className="rightside">

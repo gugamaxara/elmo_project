@@ -1,0 +1,72 @@
+@media only screen and (max-width: 768px) {
+
+    .howToStart .howToStartName{
+        top: 70px;
+    }
+
+    .howToStart .howToStartName h1{
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+
+    .howToStart .wrapper{
+        left: 5%;
+        top: 96px;
+        width: 90%;
+        height: 80%;
+    }
+
+    .howToStart .wrapper ul{
+        height: 90%;
+        margin-top: 35px;
+    }
+
+    .howToStart .wrapper ul li{
+        width: 100%;
+        margin-bottom: 0;
+        height: 85px;
+        margin-right: 0;
+    }
+
+    .howToStart .wrapper ul li img{
+        float: left;
+        margin-right: 25px;
+        margin-left: 15px;
+    }
+
+    .howToStart .wrapper ul li.orderIcon img{
+        width: 40px;
+        height: 48px;
+    }
+
+    .howToStart .wrapper ul li.calendarIcon img{
+        width: 44px;
+        height: 48px;
+    }
+
+    .howToStart .wrapper ul li.priceIcon img{
+        width: 36px;
+        height: 48px;
+        margin-left: 20px;
+    }
+
+    .howToStart .wrapper ul li.dealIcon img{
+        width: 50px;
+        height: 30px;
+        margin-top: 0;
+    }
+
+    .howToStart .wrapper ul li h3{
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .howToStart .wrapper ul li p{
+        text-align: left;
+        font-size: 10px;
+        margin: 0;
+        padding-top: 5px; 
+    }
+
+}

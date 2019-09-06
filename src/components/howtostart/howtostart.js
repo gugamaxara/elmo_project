@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./howtostart.css"
+import "./mobile-howtostart.css"
 
 import Order from "../../image/order.png";
 import Calendar from "../../image/calendar.png";

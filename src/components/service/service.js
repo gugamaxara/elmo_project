@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./service.css"
+import "./mobile-service.css"
 
 import servicepic from "../../image/service.png"
 
@@ -8,21 +9,24 @@ class Service extends React.Component{
     render(){
         return(
             <div className="service">
-                <img alt="service background" src={servicepic}/>
+                <div className="serviceBackground">
+                    <img alt="service background" src={servicepic}/>
+                </div>
+                
                 <div className="serviceName">
                     <h1>სერვისები</h1>
                 </div>
                 <div className="mainServices">
                     <ul>
-                        <li className="redEgg">ქუჩის განათების დაყენება და შეკეთება</li>
-                        <li>ელექტროობის დაპროექტება</li>
-                        <li className="redEgg">დაცვის სისტემის დაყენება და შეკეთება</li>
-                        <li className="redEgg">ელექტრო სამუშაოები(ბინა, კოტეჯი, ოფისი)</li>
-                        <li>კაბელების მონტაჟი</li>
-                        <li className="redEgg">შიდა და გარე განათების <br/> მონტაჟი</li>
-                        <li>იატაკქვეშა გათბობის მონტაჟი</li>
-                        <li className="redEgg">ელექტრობლოკების დაყენება და შეცვლა</li>
-                        <li className="redEgg">მაღალი ძაბვის გენერატორების დამონტაჟება</li>
+                        <li className="redEgg oneLineRectangle" >ქუჩის განათების დაყენება და შეკეთება</li>
+                        <li className="oneLineRectangle">ელექტროობის დაპროექტება</li>
+                        <li className="redEgg oneLineRectangle">დაცვის სისტემის დაყენება და შეკეთება</li>
+                        <li className="redEgg twoLineRectangle">ელექტრო სამუშაოები(ბინა, კოტეჯი, ოფისი)</li>
+                        <li className="oneLineRectangle">კაბელების მონტაჟი</li>
+                        <li className="redEgg twoLineRectangle">შიდა და გარე განათების <br/> მონტაჟი</li>
+                        <li className="oneLineRectangle">იატაკქვეშა გათბობის მონტაჟი</li>
+                        <li className="redEgg twoLineRectangle">ელექტრობლოკების დაყენება და შეცვლა</li>
+                        <li className="redEgg twoLineRectangle">მაღალი ძაბვის გენერატორების დამონტაჟება</li>
                     </ul>
                 </div>
             </div>

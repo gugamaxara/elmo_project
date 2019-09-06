@@ -1,0 +1,53 @@
+@media only screen and (max-width: 768px) {
+
+    .service{
+        height: 955px;
+    }
+
+    .service .serviceBackground{
+        display: none;
+    }
+    .service .serviceName {
+        top: 55px;
+    }
+
+    .service .serviceName h1{
+        color: #464247;
+        font-size: 24px;
+        letter-spacing: 5px;
+    }
+
+    .service .mainServices{
+        top: 120px;
+        width: 90%;
+        left: 5%;
+        height: 85%;
+    }
+
+    .service .mainServices ul li{
+        width: 100%;
+        height: 60px;
+        margin-bottom: 24px;
+        font-size: 18px;
+        border: 2px solid #464247;
+        padding-top: 0;
+        margin-right: 0;
+        
+        
+    }
+
+    .service .mainServices ul li.redEgg{
+        padding-top: 0;
+        height: 60px;
+    }
+
+    .service .mainServices ul li.oneLineRectangle{
+        line-height: 64px;
+    }
+
+    .service .mainServices ul li.twoLineRectangle{
+        line-height: 23px;
+        padding-top: 10px;
+        height: 50px;
+    }
+}

@@ -3,6 +3,7 @@ import { faFacebook, faGooglePlus } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./contact.css";
+import "./mobile-contact.css";
 
 import ContactImage from "../../image/contact.png";
 
