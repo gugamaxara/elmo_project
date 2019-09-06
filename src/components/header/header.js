@@ -104,7 +104,7 @@ class Header extends React.Component{
                                     <a href="tel:574 22 60 22"><img src={Phone} alt="phone icon"/></a>
                                 </li>
                                 <li>
-                                    <img src={Mail} alt="mail icon"/>
+                                    <a href="mailto:company.elmo@gmail.com"><img src={Mail} alt="mail icon"/></a>
                                 </li>
                             </ul>
                         </div>
@@ -121,16 +121,9 @@ class Header extends React.Component{
                             </a>
                         </li>
                         <li>
-                            {
-                                /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 
-                                <a href="mailto:company.elmo@gmail.com">
-                                    <FontAwesomeIcon icon={faGooglePlus} className="icon"/>
-                                </a> : 
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=company.elmo@gmail.com">
-                                    <FontAwesomeIcon icon={faGooglePlus} className="icon"/>
-                                </a>
-                            }
-                            
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=company.elmo@gmail.com">
+                                <FontAwesomeIcon icon={faGooglePlus} className="icon"/>
+                            </a>
                         </li>
                     </ul>
                     <span>+995 555 55 55 55</span>
