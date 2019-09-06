@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./header.css";
 import "./mobile-header.css";
+import axios from 'axios';
+
+import "./header.css"
 
 import headerImage from "../../image/fon.png";
 import headerMobileImage from "../../image//mobileHeaderImage.png"
@@ -15,15 +18,21 @@ import Logo from "../../image/logo.png";
 import {CallPoppup, MobilePopup} from "../../components/popup/popup"
 
 
+const initialState = {
+    customer_name: '',
+    customer_phone: '',
+    mobileMenu: false,
+    showPopUp: false
+};
 
 class Header extends React.Component{
     constructor(){
         super()
-        this.state = {
-            customer_name: '',
-            customer_phone: '',
-            showPopUp: false
-        }
+        this.state = initialState
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll, true);
     }
 
     handleTimeout = (el, txt) => {
@@ -54,9 +63,12 @@ class Header extends React.Component{
             })
             var call_form = document.querySelector('div.rightsideInfo form')
             call_form.reset()
+            setTimeout(() => {
+                this.setState(initialState)
+            }, 5000)
         }
     }
-    
+
 
     handleRequestCallFields = event => {
         this.setState({
@@ -69,17 +81,31 @@ class Header extends React.Component{
         element.scrollIntoView({behavior: "smooth", inline: "nearest"});
     }
 
+
+    handleMobileMenu = () => {
+        this.setState({
+            mobileMenu: !this.state.mobileMenu
+        })
+    }
+
+    handleScroll = () => {
+        if(window.pageYOffset > 72) {
+            document.getElementById("mobileHeader").classList.add('sticky');
+        }
+    }
+
     render(){
         return(
-            <div className="header">
+            <div className="header" id="header-page">
                 {this.state.showPopUp ? <CallPoppup closeButton={this.handlePopUp}/> : null}
-                <div className="mobileHeader">
+                {this.state.mobileMenu ? <MobilePopup closeButton={this.handleMobileMenu} /> : null}
+                <div className="mobileHeader sticky" id="mobileHeader" onScroll={this.handleScroll}>
                     <div className="wrapper">
                         <div className="menuLogo">
-                            <img src={Menu} alt="menu icon"  onClick={this.handlePopUp}/>
+                            <img src={Menu} alt="menu icon"  onClick={this.handleMobileMenu}/>
                         </div>
                         <div className="companyLogo">
-                            <img src={Logo} alt="company logo"/>
+                            <img src={Logo} alt="company logo" onClick={() => this.handleScrollView("header-page")}/>
                         </div>
                         <div className="icons">
                             <ul>

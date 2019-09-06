@@ -11,7 +11,7 @@ import Deal from "../../image/deal2.png";
 class HowToStart extends React.Component{
     render(){
         return(
-            <div className="howToStart">
+            <div className="howToStart" id="howtostart-page">
                 <div className="howToStartName">
                     <h1>როგორ დავიწყოთ?</h1>
                 </div>

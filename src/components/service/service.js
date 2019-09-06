@@ -8,7 +8,7 @@ import servicepic from "../../image/service.png"
 class Service extends React.Component{
     render(){
         return(
-            <div className="service">
+            <div className="service" id="service-page">
                 <div className="serviceBackground">
                     <img alt="service background" src={servicepic}/>
                 </div>

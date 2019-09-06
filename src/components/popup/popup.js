@@ -40,19 +40,27 @@ export class OrderPoppup extends React.Component{
     }
 }
 
+
+
 export class MobilePopup extends React.Component{
+    handleScrollView = id =>{
+      var element = document.getElementById(id);
+      element.scrollIntoView({behavior: "smooth", inline: "nearest"});
+      this.props.closeButton();
+  }
+  
   render(){
       return (
-          <div className='popup'>
+          <div className='mobile_popup'>
             <div className='mobile_popup_inner'>
-              {/* <div className="mobile-menu">
+              <div className="mobile_menu">
                 <ul>
-                  <li>ჩვენს შესახებ</li>
-                  <li>სერვისები</li>
-                  <li>როგორ დავიწყოთ?</li>
+                  <li onClick={() => this.handleScrollView("about-page")}>ჩვენს შესახებ</li>
+                  <li onClick={() => this.handleScrollView("service-page")}>სერვისები</li>
+                  <li onClick={() => this.handleScrollView("howtostart-page")}>როგორ დავიწყოთ?</li>
                 </ul>
-                <button>შეკვეთა</button>
-              </div> */}
+                <button onClick={() => this.handleScrollView("order-page")}>შეკვეთა</button>
+              </div>
             </div>
           </div>
         );

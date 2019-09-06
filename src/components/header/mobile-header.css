@@ -88,6 +88,7 @@
 
     .header .mobileHeader{
         display: block;
+        z-index: 999;
     }
 
     .header .mobileHeader .companyLogo img {
@@ -136,5 +137,11 @@
         font-size: 20px;
         line-height: 30px;
         font-weight: normal;
+    }
+
+    .sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
     }
   }

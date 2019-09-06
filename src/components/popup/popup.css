@@ -81,11 +81,48 @@ html, body, .app {
 }
 
 
-.popup .mobile-popup_inner{
+
+.mobile_popup .mobile_popup_inner{
     position: absolute;
     left: 0;
     top: 72px;
     background: #464247;
     width: 100%;
-    height: 200px;
+    height: 250px;
+    z-index: 999;
+}
+
+.mobile_popup .mobile_popup_inner .mobile_menu{
+    display: block;
+    width: 90%;
+    height: 85%;
+    margin: 5% auto;
+}
+
+.mobile_popup .mobile_popup_inner .mobile_menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile_popup .mobile_popup_inner .mobile_menu ul li{
+    display: block;
+    width: 100%;
+    height: 48px;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+    letter-spacing: 3px;
+}
+
+.mobile_popup .mobile_popup_inner .mobile_menu button{
+    display: block;
+    width: 100%;
+    height: 48px;
+    background-color: #eedb3b;
+    border: none;
+    font-family: 'BPG Nino Mtavruli';
+    font-size: 18px;
+    letter-spacing: 5px;
 }
