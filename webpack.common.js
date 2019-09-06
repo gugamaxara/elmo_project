@@ -25,7 +25,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(gif|png|jpe?g|svg)$/i,
+                test: /\.(gif|png|jpe?g|svg|ico)$/i,
                 use: [
                     'file-loader',
                     {
@@ -44,7 +44,9 @@ module.exports = {
         extensions: ['*', '.js', '.jsx']
     },
     plugins:[
-        new hwp({template:path.join(__dirname, '/src/index.html')}),
+        new hwp({
+            template:path.join(__dirname, '/src/index.html'),
+        }),
         new MiniCssExtractPlugin({
             filename: "style.css"
         })
