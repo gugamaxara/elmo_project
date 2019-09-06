@@ -2,21 +2,29 @@ import React from "react";
 import { faFacebook, faGooglePlus } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import axios from 'axios';
+
 import "./header.css"
 
 import headerImage from "../../image/fon.png";
 
 import {CallPoppup} from "../../components/popup/popup"
 
+const initialState = {
+    customer_name: '',
+    customer_phone: '',
+    showPopUp: false
+};
 
 class Header extends React.Component{
     constructor(){
         super()
-        this.state = {
-            customer_name: '',
-            customer_phone: '',
-            showPopUp: false
-        }
+        this.state = initialState
+    }
+
+    componentDidMount(){
+        console.log("mounted")
+        
     }
 
     handleTimeout = (el, txt) => {
@@ -47,6 +55,9 @@ class Header extends React.Component{
             })
             var call_form = document.querySelector('div.rightsideInfo form')
             call_form.reset()
+            setTimeout(() => {
+                this.setState(initialState)
+            }, 5000)
         }
     }
 
