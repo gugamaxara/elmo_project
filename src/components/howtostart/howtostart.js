@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./howtostart.css"
+import "./mobile-howtostart.css"
 
 import Order from "../../image/order.png";
 import Calendar from "../../image/calendar.png";
@@ -10,7 +11,7 @@ import Deal from "../../image/deal2.png";
 class HowToStart extends React.Component{
     render(){
         return(
-            <div className="howToStart">
+            <div className="howToStart" id="howtostart-page">
                 <div className="howToStartName">
                     <h1>როგორ დავიწყოთ?</h1>
                 </div>

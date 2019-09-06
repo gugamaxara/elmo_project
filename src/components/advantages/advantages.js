@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./advantages.css"
+import "./mobile-advantages.css"
 
 import Response from "../../image/response.png";
 import Worker from "../../image/worker.png";

@@ -1,11 +1,13 @@
 import React from "react";
 
 import "./order.css";
+import "./mobile-order.css";
+import "../popup/popup.css";
 
 //helper functions
 import {validateElement} from '../../validators/simple_validator'
 
-import {OrderPoppup} from "../../components/popup/popup"
+import {PopUp} from "../../components/popup/popup"
 
 const orderInitialState = {
     customer_name: '',
@@ -41,6 +43,8 @@ class Order extends React.Component{
             this.setState({
                 showPopUp: !this.state.showPopUp
             })
+            var call_form = document.querySelector('div.order form')
+            call_form.reset()
         }
     }
 
@@ -59,7 +63,8 @@ class Order extends React.Component{
     render(){
         return(
             <div className="order" id="order-page">
-                {this.state.showPopUp ? <OrderPoppup closeButton={this.handlePopUp}/> : null}
+                {this.state.showPopUp ? <PopUp closeButton={this.handlePopUp} mainTitle="მადლობა შეკვეთისთვის!"
+                 description="ჩვენი კონსულტანტი რაც შეიძლება სწრაფად დაგიკავშირდებათ"/> : null}
                 <div className="orderName">
                     <h1>შეუკვეთე ახლავე</h1>
                     <p>შეავსეთ ფორმა და დაელოდეთ ზარს</p>

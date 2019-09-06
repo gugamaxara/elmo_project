@@ -1,0 +1,147 @@
+.mobileHeader{
+    display: none;
+    width: 100%;
+    height: 72px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.mobileHeader .wrapper{
+    display: block;
+    width: 90%;
+    height: 48px;
+    margin: auto;
+    position: absolute;
+    top: 12px;
+    left: 5%;
+}
+
+.mobileHeader .wrapper .menuLogo{
+    display: block;
+    float: left;
+    width: 20%;
+    height: 24px;
+    padding: 12px 0;
+}
+
+.mobileHeader .wrapper .menuLogo img{
+    width: 25px;
+    height: 24px;
+}
+
+.mobileHeader .wrapper .companyLogo{
+    display: block;
+    float: left;
+    width: 50%;
+    height: 48px;
+}
+
+.mobileHeader .wrapper .companyLogo h1{
+    margin: 0;
+    padding: 6px 0 0 10%;
+    color: #745c5c;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+
+}
+
+.mobileHeader .wrapper .icons{
+    display: block;
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.mobileHeader .wrapper .icons ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 100%;
+    float: right;
+}
+
+.mobileHeader .wrapper .icons ul li{
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 0 0 12px;
+    padding: 5px 0 0 0;
+}
+
+.mobileHeader .wrapper .icons ul li img{
+    width: 35px;
+    height: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header{
+        height: 550px;
+    }  
+
+    .header .socialNetwork{
+        display: none;
+    }
+
+    .header .navigation{
+        display: none;
+    }
+
+    .header .mobileHeader{
+        display: block;
+        z-index: 999;
+    }
+
+    .header .mobileHeader .companyLogo img {
+        width: 77px;
+        height: 48px;
+        margin-left: 10px;
+    }
+
+    .header .headerHeart .rightside{
+        display: none;
+    }
+
+    .header .headerImage{
+        display: none;
+    }
+
+    .header .headerMobileImage{
+        display: block;
+    }
+
+    .header .headerHeart{
+        height: 60%;
+        top: 144px;
+    }
+
+    .header .headerHeart .leftside{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .header .headerHeart .leftside .leftsideInfo{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .header .headerHeart .leftside .leftsideInfo h2{
+        margin: 0;
+        font-size: 28px;
+        line-height: 42px;
+        padding-top: 10px;
+    }
+
+    .header .headerHeart .leftside .leftsideInfo h3{
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: normal;
+    }
+
+    .sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+  }

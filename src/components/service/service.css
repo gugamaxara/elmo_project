@@ -5,7 +5,13 @@
     position: relative;
 }
 
-.service img{
+.service .serviceBackground{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.service .serviceBackground img{
     width: 100%;
     height: 100%;
 }
@@ -33,7 +39,7 @@
     display: block;
     position: absolute;
     top: 192px;
-    left: 11%;
+    left: 10%;
     width: 80%;
     margin: 0 auto;
     height: 360px;

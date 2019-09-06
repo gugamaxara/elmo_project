@@ -42,16 +42,13 @@ html, body, .app {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 5px
-}
-
-.popup .popup_inner .closeButton{
-    width: 20px;
-    height: 20px;
+    padding: 5px;
     cursor: pointer;
+
 }
 
-.popup .popup_inner .callPopupInfo, .orderPopupInfo{
+
+.popup .popup_inner .popupInfo{
     display: block;
     width: 420px;
     height: 72px;
@@ -60,7 +57,7 @@ html, body, .app {
     right: 58px;
 }
 
-.popup .popup_inner .callPopupInfo h1, .orderPopupInfo h1{
+.popup .popup_inner .popupInfo h1{
     display: block;
     text-align: center;
     font-weight: normal;
@@ -70,7 +67,7 @@ html, body, .app {
     padding: 0;
 }
 
-.popup .popup_inner .callPopupInfo p, .orderPopupInfo p{
+.popup .popup_inner .popupInfo p{
     display: block;
     text-align: center;
     font-weight: normal;
@@ -78,4 +75,84 @@ html, body, .app {
     font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
     padding: 0;
     margin: 12px 0 0 0;
+}
+
+
+
+.mobile_popup .mobile_popup_inner{
+    position: absolute;
+    left: 0;
+    top: 72px;
+    background: #464247;
+    width: 100%;
+    height: 250px;
+    z-index: 999;
+}
+
+.mobile_popup .mobile_popup_inner .mobile_menu{
+    display: block;
+    width: 90%;
+    height: 85%;
+    margin: 5% auto;
+}
+
+.mobile_popup .mobile_popup_inner .mobile_menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile_popup .mobile_popup_inner .mobile_menu ul li{
+    display: block;
+    width: 100%;
+    height: 48px;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
+    letter-spacing: 3px;
+}
+
+.mobile_popup .mobile_popup_inner .mobile_menu button{
+    display: block;
+    width: 100%;
+    height: 48px;
+    background-color: #eedb3b;
+    border: none;
+    font-family: 'BPG Nino Mtavruli';
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .popup .popup_inner {
+        width: 200px;
+        height: 100px;
+        margin: 0;
+    }
+
+    .popup .popup_inner .closeButton{
+        width: 15px;
+        height: 15px;
+    }
+
+    .popup .popup_inner .closeButton img{
+        width: 15px;
+        height: 15px;
+    }
+
+    .popup .popup_inner .popupInfo{
+        width: 90%;
+        height: 60%;
+        top: 30%;
+        left: 5%;
+    }
+
+    .popup .popup_inner .popupInfo h1{
+        font-size: 14px;
+    }
+    
+    .popup .popup_inner .popupInfo p{
+        font-size: 10px;
+    }
 }

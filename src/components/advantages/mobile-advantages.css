@@ -1,0 +1,81 @@
+@media only screen and (max-width: 768px) {
+    
+    .advantages .advantagesName{
+        top: 70px;
+    }
+
+    .advantages .advantagesName h1{
+        font-size: 20px;
+        letter-spacing: 4px;
+        font-weight: bold;
+    }
+
+    .advantages .wrapper{
+        left: 5%;
+        top: 96px;
+        width: 90%;
+        height: 80%;
+    }
+
+    .advantages .wrapper ul{
+        height: 90%;
+        margin-top: 35px;
+    }
+
+    .advantages .wrapper ul li{
+        width: 100%;
+        margin-bottom: 0;
+        height: 85px;
+        margin-right: 0;
+    }
+
+    .advantages .wrapper ul li.dealIcon{
+        height: 85px;
+    }
+
+    .advantages .wrapper ul li.workerIcon{
+        height: 90px;
+    }
+    
+
+    .advantages .wrapper ul li img{
+        width: 40px;
+        height: 48px;
+        float: left;
+        margin-right: 25px;
+        margin-left: 15px;
+    }
+    
+    .advantages .wrapper ul li.workerIcon img{
+        width: 44px;
+        height: 48px;
+        margin-right: 20px;
+    }
+
+    .advantages .wrapper ul li.dealIcon img{
+        width: 50px;
+        height: 30px;
+        margin: 0 17px 40px 12px;
+    }
+
+    .advantages .wrapper ul li.timeIcon img{
+        width: 45px;
+        height: 45px;
+        margin-right: 20px;
+        margin-left: 12px;
+    }
+
+    .advantages .wrapper ul li h3{
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .advantages .wrapper ul li p{
+        text-align: left;
+        font-size: 10px;
+        margin: 0;
+        padding-top: 5px; 
+    }
+
+
+}

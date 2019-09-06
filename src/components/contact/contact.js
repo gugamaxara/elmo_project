@@ -6,13 +6,20 @@ import axios from 'axios';
 //helper functions
 import {validateElement} from '../../validators/simple_validator'
 
+import {PopUp} from "../popup/popup";
+
 import "./contact.css";
+import "./mobile-contact.css";
 
 import ContactImage from "../../image/contact.png";
+
+
+
 
 const contactInitialState = {
     customer_name: '',
     customer_email: '',
+    showPopUp: false,
     customer_text: ''
 }
 
@@ -45,8 +52,15 @@ class Contact extends React.Component{
             })
             .catch(error => {
                 console.log(error)
+
             })
+            this.setState({
+                showPopUp: !this.state.showPopUp
+            })
+            var call_form = document.querySelector('div.leftside form')
+            call_form.reset()
         }
+
     }
 
     handleContactFields = event =>{
@@ -55,9 +69,18 @@ class Contact extends React.Component{
         })
     }
 
+
+    handlePopUp = () => {
+        this.setState({
+            showPopUp: !this.state.showPopUp
+        })
+    }
+
     render(){
         return(
             <div className="contact" id="contact-page">
+                {this.state.showPopUp ? <PopUp closeButton={this.handlePopUp} mainTitle="მადლობა დაკავშირებისთვის!"
+                 description="ჩვენი კონსულტანტი რაც შეიძლება სწრაფად დაგიკავშირდებათ"/> : null}
                 <div className="contactForm">
                     <img src={ContactImage} alt="header image"/>
                     <div className="leftside">

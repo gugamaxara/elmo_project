@@ -2,6 +2,8 @@ import React from "react";
 import { faFacebook, faGooglePlus } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import "./header.css";
+import "./mobile-header.css";
 import axios from 'axios';
 
 //helper functions
@@ -10,12 +12,19 @@ import {validateElement} from '../../validators/simple_validator'
 import "./header.css"
 
 import headerImage from "../../image/fon.png";
+import headerMobileImage from "../../image//mobileHeaderImage.png"
+import Menu from "../../image/menu.png";
+import Phone from "../../image/phone.png";
+import Mail from "../../image/mail.png";
+import Logo from "../../image/logo.png";
 
-import {CallPoppup} from "../../components/popup/popup"
+import {PopUp, MobilePopup} from "../../components/popup/popup";
+
 
 const initialState = {
     customer_name: '',
     customer_phone: '',
+    mobileMenu: false,
     showPopUp: false
 };
 
@@ -23,6 +32,10 @@ class Header extends React.Component{
     constructor(){
         super()
         this.state = initialState
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll, true);
     }
     
     handlePopUp = e => {
@@ -46,6 +59,7 @@ class Header extends React.Component{
         }
     }
 
+
     handleRequestCallFields = event => {
         this.setState({
             [event.target.name]: event.target.value
@@ -57,12 +71,48 @@ class Header extends React.Component{
         element.scrollIntoView({behavior: "smooth", inline: "nearest"});
     }
 
+
+    handleMobileMenu = () => {
+        this.setState({
+            mobileMenu: !this.state.mobileMenu
+        })
+    }
+
+    handleScroll = () => {
+        if(window.pageYOffset > 72) {
+            document.getElementById("mobileHeader").classList.add('sticky');
+        }
+    }
+
     render(){
         return(
-            <div className="header">
-                
-                {this.state.showPopUp ? <CallPoppup closeButton={this.handlePopUp}/> : null}
-                <img src={headerImage} alt="header image"/>
+            <div className="header" id="header-page">
+                {this.state.showPopUp ? <PopUp closeButton={this.handlePopUp} mainTitle="მადლობა დაკავშირებისთვის!"
+                 description="ჩვენი კონსულტანტი რაც შეიძლება სწრაფად დაგიკავშირდებათ"/> : null}
+                {this.state.mobileMenu ? <MobilePopup closeButton={this.handleMobileMenu} /> : null}
+                <div className="mobileHeader" id="mobileHeader" onScroll={this.handleScroll}>
+                    <div className="wrapper">
+                        <div className="menuLogo">
+                            <img src={Menu} alt="menu icon"  onClick={this.handleMobileMenu}/>
+                        </div>
+                        <div className="companyLogo">
+                            <img src={Logo} alt="company logo" onClick={() => this.handleScrollView("header-page")}/>
+                        </div>
+                        <div className="icons">
+                            <ul>
+                                <li>
+                                    <a href="tel:574 22 60 22"><img src={Phone} alt="phone icon"/></a>
+                                </li>
+                                <li>
+                                    <img src={Mail} alt="mail icon"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <img src={headerImage} alt="header image" className="headerImage"/>
+                <img src={headerMobileImage} className="headerMobileImage"/>
                 <div className="socialNetwork">
                     <ul>
                         <li>
@@ -88,7 +138,7 @@ class Header extends React.Component{
                 <div className="navigation">
                     <div className="wrapper">
                        <div className="companyName">
-                           <h1>კარგი ლოგოტიპი</h1>
+                           <img src={Logo} alt="company logo"/>
                        </div>
                         <div className="navBar">
                                 <ul>
@@ -104,8 +154,8 @@ class Header extends React.Component{
                 <div className="headerHeart">
                     <div className="leftside">
                         <div className="leftsideInfo">
-                            <h2>მაღალი ხარისხი მისაღებ ფასებში, თბილისში</h2>
-                            <h3>ჩვენ გთავატობთ სწრაფ და ხარისხიან სერვისს, ასევე გარანტიას ნებისმიერი ტიპის სამუშაოზე</h3>
+                            <h2>მაღალი ხარისხი მისაღებ ფასებში თბილისში</h2>
+                            <h3>ჩვენ გთავაზობთ სწრაფ და ხარისხიან სერვისს, ასევე გარანტიას ნებისმიერი ტიპის სამუშაოზე</h3>
                         </div>
                     </div>
                     <div className="rightside">
