@@ -1,24 +1,94 @@
 import React from "react";
 import { faFacebook, faGooglePlus } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import axios from 'axios';
+
+//helper functions
+import {validateElement} from '../../validators/simple_validator'
+
+import {PopUp} from "../popup/popup";
 
 import "./contact.css";
 import "./mobile-contact.css";
 
 import ContactImage from "../../image/contact.png";
 
+
+
+
+const contactInitialState = {
+    customer_name: '',
+    customer_email: '',
+    showPopUp: false,
+    customer_text: ''
+}
+
 class Contact extends React.Component{
+    constructor(){
+        super()
+        this.state = contactInitialState
+    }
+
+    handleContactSubmit = event => {
+        event.preventDefault()
+        var email_validator = ((/^[-\w\W]+@[\w]+(\.[\w]{2,5}|\.[\w]{2,5}\.[\w]{2,5})$/).test(this.state.customer_email))
+        if(!this.state.customer_name){
+            validateElement(this.refs.customer_name, "გთხოვთ შეიყვანოთ სახელი", "სახელი")
+        }
+        else if(!this.state.customer_email || !email_validator){
+            validateElement(this.refs.customer_email, "გთხოვთ სწორად შეიყვანოთ ელ.ფოსტა", "ელექტრონული ფოსტა")
+        }
+        else if(!this.state.customer_text){
+            validateElement(this.refs.customer_text, "გთხოვთ შეიყვანოთ შეკითხვა", "შეკითხვა")
+        }
+        else{
+            axios.get("http://localhost:3000/sendmail/", {params: {
+                customer_name: this.state.customer_name,
+                customer_email: this.state.customer_email,
+                customer_text: this.state.customer_text
+            }})
+            .then(response => {
+                console.log(response)
+            })
+            .catch(error => {
+                console.log(error)
+
+            })
+            this.setState({
+                showPopUp: !this.state.showPopUp
+            })
+            var call_form = document.querySelector('div.leftside form')
+            call_form.reset()
+        }
+
+    }
+
+    handleContactFields = event =>{
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
+
+    handlePopUp = () => {
+        this.setState({
+            showPopUp: !this.state.showPopUp
+        })
+    }
+
     render(){
         return(
             <div className="contact" id="contact-page">
+                {this.state.showPopUp ? <PopUp closeButton={this.handlePopUp} mainTitle="მადლობა დაკავშირებისთვის!"
+                 description="ჩვენი კონსულტანტი რაც შეიძლება სწრაფად დაგიკავშირდებათ"/> : null}
                 <div className="contactForm">
                     <img src={ContactImage} alt="header image"/>
                     <div className="leftside">
                         <h2>გაქვთ კითხვები?</h2>
-                        <form>
-                            <input type="text" placeholder="სახელი"/>
-                            <input type="text" placeholder="ელექტრონული ფოსტა"/>
-                            <textarea type="text" placeholder="შეკითხვა" className="redEgg"/>
+                        <form onSubmit={this.handleContactSubmit}>
+                            <input type="text" placeholder="სახელი" name="customer_name" ref="customer_name" onChange={this.handleContactFields}/>
+                            <input type="text" placeholder="ელექტრონული ფოსტა" name="customer_email" ref="customer_email" onChange={this.handleContactFields}/>
+                            <textarea type="text" placeholder="შეკითხვა" maxLength="250" className="redEgg" ref="customer_text" name="customer_text" onChange={this.handleContactFields}/>
                             <input className="button" type="submit" value="გაგზავნა"/>
                         </form>
                     </div>

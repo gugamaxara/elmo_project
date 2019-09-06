@@ -24,7 +24,7 @@ class Footer extends React.Component{
                     <div className="navBar">
                         <ul>
                             <li onClick={() => this.handleScrollView("about-page")}>ჩვენ შესახებ</li>
-                            <li className="redEgg" onClick={() => this.handleScrollView("about-page")}>კონტაქტი</li>
+                            <li className="redEgg" onClick={() => this.handleScrollView("contact-page")}>კონტაქტი</li>
                         </ul>
                     </div>
                     <div className="footerContact"> 

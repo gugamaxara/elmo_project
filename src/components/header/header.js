@@ -6,6 +6,9 @@ import "./header.css";
 import "./mobile-header.css";
 import axios from 'axios';
 
+//helper functions
+import {validateElement} from '../../validators/simple_validator'
+
 import "./header.css"
 
 import headerImage from "../../image/fon.png";
@@ -15,7 +18,7 @@ import Phone from "../../image/phone.png";
 import Mail from "../../image/mail.png";
 import Logo from "../../image/logo.png";
 
-import {CallPoppup, MobilePopup} from "../../components/popup/popup"
+import {PopUp, MobilePopup} from "../../components/popup/popup";
 
 
 const initialState = {
@@ -34,28 +37,15 @@ class Header extends React.Component{
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll, true);
     }
-
-    handleTimeout = (el, txt) => {
-        return setTimeout(() => {
-            el.placeholder = txt
-            el.style.backgroundColor = "white"
-        }, 3000)
-    }
     
     handlePopUp = e => {
         e.preventDefault();
-        var customer_name = this.refs.customer_name
-        var customer_phone = this.refs.customer_phone
-        var customer_phone_validation = (/^\d+$/.test(this.state.customer_phone)) ? true : false
+        var customer_phone_validation = /^\d+$/.test(this.state.customer_phone)
         if(!this.state.customer_name){
-            customer_name.placeholder = "გთხოვთ შეიყვანოთ სახელი"
-            customer_name.style.backgroundColor = 'red'
-            this.handleTimeout(this.refs.customer_name, "სახელი")
+            validateElement(this.refs.customer_name,"გთხოვთ შეიყვანოთ სახელი","სახელი")
         }
         else if(!customer_phone_validation || this.state.customer_phone.length < 9 || !this.state.customer_phone.startsWith("5")){
-            customer_phone.placeholder = "გთხოვთ სწორად შეიყვანოთ ტელეფონი"
-            customer_phone.style.backgroundColor = "red"
-            this.handleTimeout(this.refs.customer_phone, "ტელეფონის ნომერი")
+            validateElement(this.refs.customer_phone, "გთხოვთ სწორად შეიყვანოთ ტელეფონი", "ტელეფონის ნომერი")
         }
         else{
             this.setState({
@@ -97,9 +87,10 @@ class Header extends React.Component{
     render(){
         return(
             <div className="header" id="header-page">
-                {this.state.showPopUp ? <CallPoppup closeButton={this.handlePopUp}/> : null}
+                {this.state.showPopUp ? <PopUp closeButton={this.handlePopUp} mainTitle="მადლობა დაკავშირებისთვის!"
+                 description="ჩვენი კონსულტანტი რაც შეიძლება სწრაფად დაგიკავშირდებათ"/> : null}
                 {this.state.mobileMenu ? <MobilePopup closeButton={this.handleMobileMenu} /> : null}
-                <div className="mobileHeader sticky" id="mobileHeader" onScroll={this.handleScroll}>
+                <div className="mobileHeader" id="mobileHeader" onScroll={this.handleScroll}>
                     <div className="wrapper">
                         <div className="menuLogo">
                             <img src={Menu} alt="menu icon"  onClick={this.handleMobileMenu}/>
@@ -110,7 +101,7 @@ class Header extends React.Component{
                         <div className="icons">
                             <ul>
                                 <li>
-                                    <img src={Phone} alt="phone icon"/>
+                                    <a href="tel:574 22 60 22"><img src={Phone} alt="phone icon"/></a>
                                 </li>
                                 <li>
                                     <img src={Mail} alt="mail icon"/>
