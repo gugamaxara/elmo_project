@@ -1,6 +1,7 @@
 /node_modules
 /build
 cheatsheet_package.json
+server.js
 
 logs
 *.log

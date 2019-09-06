@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import axios from 'axios';
 
+//helper functions
+import {validateElement} from '../../validators/simple_validator'
+
 import "./header.css"
 
 import headerImage from "../../image/fon.png";
@@ -21,33 +24,15 @@ class Header extends React.Component{
         super()
         this.state = initialState
     }
-
-    componentDidMount(){
-        console.log("mounted")
-        
-    }
-
-    handleTimeout = (el, txt) => {
-        return setTimeout(() => {
-            el.placeholder = txt
-            el.style.backgroundColor = "white"
-        }, 3000)
-    }
     
     handlePopUp = e => {
         e.preventDefault();
-        var customer_name = this.refs.customer_name
-        var customer_phone = this.refs.customer_phone
-        var customer_phone_validation = (/^\d+$/.test(this.state.customer_phone)) ? true : false
+        var customer_phone_validation = /^\d+$/.test(this.state.customer_phone)
         if(!this.state.customer_name){
-            customer_name.placeholder = "გთხოვთ შეიყვანოთ სახელი"
-            customer_name.style.backgroundColor = 'red'
-            this.handleTimeout(this.refs.customer_name, "სახელი")
+            validateElement(this.refs.customer_name,"გთხოვთ შეიყვანოთ სახელი","სახელი")
         }
         else if(!customer_phone_validation || this.state.customer_phone.length < 9 || !this.state.customer_phone.startsWith("5")){
-            customer_phone.placeholder = "გთხოვთ სწორად შეიყვანოთ ტელეფონი"
-            customer_phone.style.backgroundColor = "red"
-            this.handleTimeout(this.refs.customer_phone, "ტელეფონის ნომერი")
+            validateElement(this.refs.customer_phone, "გთხოვთ სწორად შეიყვანოთ ტელეფონი", "ტელეფონის ნომერი")
         }
         else{
             this.setState({
