@@ -44,7 +44,9 @@ module.exports = {
         extensions: ['*', '.js', '.jsx']
     },
     plugins:[
-        new hwp({template:path.join(__dirname, '/src/index.html')}),
+        new hwp({
+            template:path.join(__dirname, '/src/index.html')
+        }),
         new MiniCssExtractPlugin({
             filename: "style.css"
         })
