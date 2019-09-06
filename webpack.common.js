@@ -25,7 +25,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(gif|png|jpe?g|svg)$/i,
+                test: /\.(gif|png|jpe?g|svg|ico)$/i,
                 use: [
                     'file-loader',
                     {
@@ -41,11 +41,16 @@ module.exports = {
         ]
     },
     resolve: {
+        alias:{
+     
+                "@" : path.join(__dirname, "src"),
+                // "~": path.join(__dirname, "assets"),
+        },
         extensions: ['*', '.js', '.jsx']
     },
     plugins:[
         new hwp({
-            template:path.join(__dirname, '/src/index.html')
+            template:path.join(__dirname, '/src/index.html'),
         }),
         new MiniCssExtractPlugin({
             filename: "style.css"

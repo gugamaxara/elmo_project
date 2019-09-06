@@ -30,6 +30,7 @@
     "nodemailer": "^6.3.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-favicon": "0.0.17",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "react-router-hash-link": "^1.2.2"
