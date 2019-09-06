@@ -41,6 +41,11 @@ module.exports = {
         ]
     },
     resolve: {
+        alias:{
+     
+                "@" : path.join(__dirname, "src"),
+                // "~": path.join(__dirname, "assets"),
+        },
         extensions: ['*', '.js', '.jsx']
     },
     plugins:[

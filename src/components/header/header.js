@@ -11,15 +11,14 @@ import {validateElement} from '../../validators/simple_validator'
 
 import "./header.css"
 
-import headerImage from "../../image/fon.png";
-import headerMobileImage from "../../image//mobileHeaderImage.png"
-import Menu from "../../image/menu.png";
-import Phone from "../../image/phone.png";
-import Mail from "../../image/mail.png";
-import Logo from "../../image/logo.png";
+import headerImage from "@/image/fon.png";
+import headerMobileImage from "@/image//mobileHeaderImage.png"
+import Menu from "@/image/menu.png";
+import Phone from "@/image/phone.png";
+import Mail from "@/image/mail.png";
+import Logo from "@/image/logo.png";
 
-import {PopUp, MobilePopup} from "../../components/popup/popup";
-
+import {PopUp, MobilePopup} from "@/components/popup/popup";
 
 const initialState = {
     customer_name: '',
