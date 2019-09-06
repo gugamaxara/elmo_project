@@ -2,15 +2,15 @@ import React from "react";
 import { faFacebook, faGooglePlus } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import "./header.css"
-import "./mobile-header.css"
+import "./header.css";
+import "./mobile-header.css";
 
 import headerImage from "../../image/fon.png";
 import headerMobileImage from "../../image//mobileHeaderImage.png"
-import Menu from "../../image/menu.png"
+import Menu from "../../image/menu.png";
 import Phone from "../../image/phone.png";
-import Mail from "../../image/mail.png"
-import Logo from "../../image/logo.png"
+import Mail from "../../image/mail.png";
+import Logo from "../../image/logo.png";
 
 import {CallPoppup, MobilePopup} from "../../components/popup/popup"
 
@@ -56,6 +56,7 @@ class Header extends React.Component{
             call_form.reset()
         }
     }
+    
 
     handleRequestCallFields = event => {
         this.setState({
