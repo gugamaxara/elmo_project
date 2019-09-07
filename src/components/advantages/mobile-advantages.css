@@ -91,7 +91,7 @@
     }
 
     .advantages .wrapper ul li.workerIcon{
-        margin-bottom: 15px;
+        margin-bottom: 30px;
     }
 
     .advantages .wrapper ul li.dealIcon{
@@ -99,12 +99,16 @@
     }
 
     .advantages .wrapper ul li.workerIcon img{
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .advantages .wrapper ul li.dealIcon img{
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
+
+    .advantages{
+        height: 540px;
+    }
 
   }
