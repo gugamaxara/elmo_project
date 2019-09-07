@@ -59,6 +59,9 @@ class Contact extends React.Component{
             })
             var call_form = document.querySelector('div.leftside form')
             call_form.reset()
+            setTimeout(() => {
+                this.setState(contactInitialState)
+            }, 5000)
         }
 
     }
