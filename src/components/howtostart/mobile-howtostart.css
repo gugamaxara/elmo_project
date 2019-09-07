@@ -78,3 +78,20 @@
     }
 
 }
+
+
+@media screen and (device-aspect-ratio: 40/71) {
+    .howToStart{
+        height: 530px;
+    }
+
+    .howToStart .wrapper ul li{
+        margin-bottom: 15px;
+        height: 95px;
+    }
+
+    .howToStart .wrapper ul li.orderIcon img{
+        margin-bottom: 55px;
+    }
+
+  }
