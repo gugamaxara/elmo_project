@@ -105,7 +105,13 @@
     .howToStart .wrapper ul li.dealIcon img{
         margin-bottom: 60px;
         margin-top: 10px;
-        padding-right: 15px;
+        margin-right: 15px;
     }
+
+    /* .howToStart .wrapper ul li.dealIcon img h1, p{
+        margin-bottom: 60px;
+        margin-top: 10px;
+        padding-right: 15px;
+    } */
 
   }
