@@ -30,11 +30,10 @@
 
 .header .socialNetwork ul{
     list-style-type: none;
-    margin: 0 0 0 40px;
+    margin: 0 0 0 48px;
     padding-top: 5px;
     float: right;
     height: 75%;
-    padding: 5px 0 5px 5px;
 }
 
 .header .socialNetwork ul li{
@@ -44,7 +43,7 @@
     cursor: pointer;
     height: 67%;
     margin: 0 0 0 5px;
-    padding: 5px;
+    padding: 5px 0 5px 5px;
 }
 
 .header .socialNetwork ul li .icon{

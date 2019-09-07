@@ -1,12 +1,14 @@
 @media only screen and (max-width: 768px) {
-
+    .howToStart{
+        height: 495px;
+    }
     .howToStart .howToStartName{
-        top: 70px;
+        top: 65px;
     }
 
     .howToStart .howToStartName h1{
         font-weight: bold;
-        font-size: 20px;
+        font-size: 24px;
         letter-spacing: 4px;
     }
 
@@ -14,7 +16,7 @@
         left: 5%;
         top: 96px;
         width: 90%;
-        height: 80%;
+        height: 65%;
     }
 
     .howToStart .wrapper ul{
@@ -27,6 +29,10 @@
         margin-bottom: 0;
         height: 85px;
         margin-right: 0;
+    }
+
+    .howToStart .wrapper ul li.calendarIcon{
+        height: 75px;
     }
 
     .howToStart .wrapper ul li img{
@@ -43,6 +49,7 @@
     .howToStart .wrapper ul li.calendarIcon img{
         width: 44px;
         height: 48px;
+        margin-right: 20px;
     }
 
     .howToStart .wrapper ul li.priceIcon img{
@@ -55,6 +62,7 @@
         width: 50px;
         height: 30px;
         margin-top: 0;
+        margin-right: 15px;
     }
 
     .howToStart .wrapper ul li h3{

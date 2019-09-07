@@ -32,7 +32,7 @@
 .mobileHeader .wrapper .companyLogo{
     display: block;
     float: left;
-    width: 50%;
+    width: 40%;
     height: 48px;
 }
 
@@ -49,7 +49,7 @@
 .mobileHeader .wrapper .icons{
     display: block;
     float: left;
-    width: 30%;
+    width: 40%;
     height: 100%;
 }
 
@@ -64,7 +64,7 @@
 .mobileHeader .wrapper .icons ul li{
     display: inline-block;
     cursor: pointer;
-    margin: 0 0 0 12px;
+    margin: 0 0 0 30px;
     padding: 5px 0 0 0;
 }
 

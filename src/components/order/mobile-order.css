@@ -1,8 +1,24 @@
 @media only screen and (max-width: 768px) {
+    .order{
+        height: 600px;
+    }
+    .order .orderName{
+        top: 65px;
+    }
+    
+    .order .orderName h1{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
     .order form{
-        top: 192px;
+        top: 160px;
         left: 5%;
         width: 90%;
         height: 384px;
+    }
+
+    .order form input.redEgg{
+        margin-bottom: 48px;
     }
 }

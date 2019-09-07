@@ -45,6 +45,9 @@ class Order extends React.Component{
             })
             var call_form = document.querySelector('div.order form')
             call_form.reset()
+            setTimeout(() => {
+                this.setState(orderInitialState)
+            }, 5000)
         }
     }
 
