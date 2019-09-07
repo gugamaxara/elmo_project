@@ -64,7 +64,7 @@
 .mobileHeader .wrapper .icons ul li{
     display: inline-block;
     cursor: pointer;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 20px;
     padding: 5px 0 0 0;
 }
 
@@ -143,5 +143,24 @@
         position: fixed;
         top: 0;
         left: 0;
+    }
+  }
+
+  @media screen and (device-aspect-ratio: 40/71) {
+    .mobileHeader .wrapper .icons ul li{
+        display: inline-block;
+        cursor: pointer;
+        margin: 0 0 0 10px;
+        padding: 5px 0 0 0;
+    }
+    .header .headerHeart .leftside .leftsideInfo h2{
+        font-size: 40px;
+        line-height: 30px;
+        padding-top: 0;
+    }
+    
+    .header .headerHeart .leftside .leftsideInfo h3{
+        padding: 0;
+        line-height: 25px;
     }
   }
