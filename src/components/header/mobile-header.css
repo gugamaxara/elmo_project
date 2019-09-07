@@ -145,3 +145,12 @@
         left: 0;
     }
   }
+
+  @media screen and (device-aspect-ratio: 40/71) {
+    .mobileHeader .wrapper .icons ul li{
+        display: inline-block;
+        cursor: pointer;
+        margin: 0 0 0 5px;
+        padding: 5px 0 0 0;
+    }
+  }
