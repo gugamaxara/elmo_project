@@ -94,6 +94,14 @@
         top: 55px;
     }
 
+
+    .advantages .wrapper{
+        left: 5%;
+        top: 106px;
+        width: 90%;
+        height: 70%;
+    }
+
     .advantages .wrapper ul li.workerIcon{
         margin-bottom: 30px;
     }
@@ -114,6 +122,7 @@
     .advantages .wrapper ul li.timeIcon img{
         margin-left: 15px;
     }
+    
     
 
   }

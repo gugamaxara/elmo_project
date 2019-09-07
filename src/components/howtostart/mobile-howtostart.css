@@ -85,6 +85,17 @@
         height: 615px;
     }
 
+    .howToStart .howToStartName{
+        top: 55px;
+    }
+
+    .howToStart .wrapper{
+        left: 5%;
+        top: 86px;
+        width: 90%;
+        height: 65%;
+    }
+
     .howToStart .wrapper ul li{
         margin-bottom: 30px;
         height: 95px;
@@ -108,10 +119,5 @@
         margin-right: 15px;
     }
 
-    /* .howToStart .wrapper ul li.dealIcon img h1, p{
-        margin-bottom: 60px;
-        margin-top: 10px;
-        padding-right: 15px;
-    } */
 
   }
