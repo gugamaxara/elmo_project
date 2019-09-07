@@ -82,7 +82,7 @@
 
 @media screen and (device-aspect-ratio: 40/71) {
     .howToStart{
-        height: 560px;
+        height: 600px;
     }
 
     .howToStart .wrapper ul li{
@@ -91,7 +91,7 @@
     }
 
     .howToStart .wrapper ul li.orderIcon img{
-        margin-bottom: 70px;
+        margin-bottom: 90px;
     }
 
   }

@@ -87,7 +87,7 @@
 
 @media screen and (device-aspect-ratio: 40/71) {
     .advantages{
-        height: 555px;
+        height: 570px;
     }
 
     .advantages .advantagesName{
@@ -107,12 +107,12 @@
     }
 
     .advantages .wrapper ul li.dealIcon img{
-        margin-top: 15px;
+        margin-top: 10px;
         margin-bottom: 55px;
     }
 
     .advantages .wrapper ul li.timeIcon img{
-        margin-left: 10px;
+        margin-left: 20px;
     }
     
 
