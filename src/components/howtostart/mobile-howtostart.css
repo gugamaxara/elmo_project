@@ -90,8 +90,17 @@
         height: 95px;
     }
 
-    .howToStart .wrapper ul li.orderIcon img{
-        margin-bottom: 90px;
+
+    .howToStart .wrapper ul li.calendarIcon img{
+        margin-bottom: 60px;
+    }
+
+    .howToStart .wrapper ul li.priceIcon img{
+        margin-bottom: 60px;
+    }
+
+    .howToStart .wrapper ul li.dealIcon img{
+        margin-bottom: 60px;
     }
 
   }
