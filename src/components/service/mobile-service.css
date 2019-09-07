@@ -42,11 +42,11 @@
     }
 
     .service .mainServices ul li.oneLineRectangle{
-        line-height: 64px;
+        line-height: 60px;
     }
 
     .service .mainServices ul li.twoLineRectangle{
-        line-height: 23px;
+        line-height: 20px;
         padding-top: 10px;
         height: 50px;
     }
