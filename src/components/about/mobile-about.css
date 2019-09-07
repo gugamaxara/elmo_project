@@ -20,3 +20,13 @@
         font-size: 14px;
     }
 }
+
+@media screen and (device-aspect-ratio: 40/71) {
+    .about .aboutUsInfo{
+        top: 22%;
+        left: 5%;;
+        width: 90%;
+        height: 65%;
+        padding: 0;
+    }
+  }
