@@ -133,18 +133,15 @@
 }
 
 .contact .contactInfo .rightside span.phoneNumber{
-    margin-top: 30px;
-    font-weight: bold;
+    margin-top: 40px;
 }
 
 .contact .contactInfo .rightside span.mail{
     margin-top: 26px;
-    font-weight: bold;
 }
 
 .contact .contactInfo .rightside span.place{
     margin-top: 21px;
-    font-weight: bold;
 }
 
 

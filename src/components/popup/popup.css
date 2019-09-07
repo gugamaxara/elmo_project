@@ -47,6 +47,12 @@ html, body, .app {
 
 }
 
+.popup .popup_inner .closeButton img{
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+
 
 .popup .popup_inner .popupInfo{
     display: block;
@@ -85,15 +91,16 @@ html, body, .app {
     top: 72px;
     background: #464247;
     width: 100%;
-    height: 250px;
+    height: 330px;
     z-index: 999;
 }
 
  .mobile_popup_inner .mobile_menu{
     display: block;
     width: 90%;
-    height: 85%;
-    margin: 5% auto;
+    height: 70%;
+    margin: 0 auto;
+    padding-top: 14%;
 }
 
  .mobile_popup_inner .mobile_menu ul{
@@ -121,6 +128,8 @@ html, body, .app {
     font-family: 'BPG Nino Mtavruli';
     font-size: 18px;
     letter-spacing: 5px;
+    margin-top: 24px;
+
 }
 
 @media only screen and (max-width: 768px) {

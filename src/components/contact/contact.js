@@ -21,6 +21,7 @@ const contactInitialState = {
     customer_email: '',
     showPopUp: false,
     customer_text: ''
+
 }
 
 class Contact extends React.Component{
@@ -99,8 +100,6 @@ class Contact extends React.Component{
                 <div className="contactInfo">
                     <div className="rightside">
                         <h2>კონტაქტი</h2>
-                        <span>დაგვიკავშირდით</span>
-
                         <span className="phoneNumber">ტელეფონის ნომერი</span>
                         <span>+995 555 55 55 55</span>
                         <span className="mail">ელექტრონული ფოსტა</span>
