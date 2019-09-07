@@ -81,3 +81,30 @@
 
 
 }
+
+
+
+
+@media screen and (device-aspect-ratio: 40/71) {
+    .advantages .advantagesName{
+        top: 55px;
+    }
+
+    .advantages .wrapper ul li.workerIcon{
+        margin-bottom: 15px;
+    }
+
+    .advantages .wrapper ul li.dealIcon{
+        margin-bottom: 15px;
+    }
+
+    .advantages .wrapper ul li.workerIcon img{
+        margin-bottom: 30px;
+    }
+
+    .advantages .wrapper ul li.dealIcon img{
+        margin-bottom: 30px;
+    }
+
+
+  }
