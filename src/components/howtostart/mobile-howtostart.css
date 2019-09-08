@@ -78,3 +78,46 @@
     }
 
 }
+
+
+@media screen and (device-aspect-ratio: 40/71) {
+    .howToStart{
+        height: 615px;
+    }
+
+    .howToStart .howToStartName{
+        top: 55px;
+    }
+
+    .howToStart .wrapper{
+        left: 5%;
+        top: 86px;
+        width: 90%;
+        height: 65%;
+    }
+
+    .howToStart .wrapper ul li{
+        margin-bottom: 30px;
+        height: 95px;
+    }
+
+    .howToStart .wrapper ul li.orderIcon img{
+        margin-bottom: 60px;
+    }
+
+    .howToStart .wrapper ul li.calendarIcon img{
+        margin-bottom: 60px;
+    }
+
+    .howToStart .wrapper ul li.priceIcon img{
+        margin-bottom: 60px;
+    }
+
+    .howToStart .wrapper ul li.dealIcon img{
+        margin-bottom: 60px;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+
+  }

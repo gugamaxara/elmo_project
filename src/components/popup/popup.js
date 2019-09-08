@@ -33,12 +33,14 @@ export class MobilePopup extends React.Component{
       element.scrollIntoView({behavior: "smooth", inline: "nearest"});
       this.props.closeButton();
   }
+
+ 
   
   render(){
       return (
             <div className='mobile_popup_inner'>
               <div className="mobile_menu">
-                <ul>
+                <ul onTouchStart="">
                   <li onClick={() => this.handleScrollView("about-page")}>ჩვენს შესახებ</li>
                   <li onClick={() => this.handleScrollView("service-page")}>სერვისები</li>
                   <li onClick={() => this.handleScrollView("howtostart-page")}>როგორ დავიწყოთ?</li>
