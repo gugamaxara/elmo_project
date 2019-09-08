@@ -119,6 +119,10 @@ html, body, .app {
     letter-spacing: 3px;
 }
 
+.mobile_popup_inner .mobile_menu ul li:active{
+    color: #eedb3b;
+}
+
  .mobile_popup_inner .mobile_menu button{
     display: block;
     width: 100%;
