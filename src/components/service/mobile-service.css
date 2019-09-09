@@ -55,4 +55,11 @@
     .service .mainServices{
         top: 120px;
     }
+
+    .service .mainServices ul li{
+        border: 2px solid #464247;
+        line-height: 60px;
+        letter-spacing: 1px;
+    }
+
   }

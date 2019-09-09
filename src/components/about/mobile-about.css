@@ -24,14 +24,10 @@
 @media screen and (max-width: 320px) {
     .about .aboutUsInfo{
         top: 20%;
-        left: 5%;;
-        width: 90%;
-        height: 65%;
-        padding: 0;
     }
     .about h1{
         top: 50px;
-        left: 23%;
-        font-size: 24px
+        left: 20%;
+        font-size: 22px
     }
   }
