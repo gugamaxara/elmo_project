@@ -1,7 +1,7 @@
 @media only screen and (max-width: 768px) {
 
     .service{
-        height: 955px;
+        height: 515px;
     }
 
     .service .serviceBackground{
@@ -42,12 +42,12 @@
     }
 
     .service .mainServices ul li.oneLineRectangle{
-        line-height: 60px;
+        line-height: 65px;
     }
 
     .service .mainServices ul li.twoLineRectangle{
         line-height: 20px;
-        padding-top: 10px;
-        height: 50px;
+        padding-top: 15px;
+        height: 45px;
     }
 }

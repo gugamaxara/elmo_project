@@ -18,15 +18,10 @@ class Service extends React.Component{
                 </div>
                 <div className="mainServices">
                     <ul>
-                        <li className="redEgg twoLineRectangle" >ქუჩის განათების დაყენება და შეკეთება</li>
                         <li className="oneLineRectangle">ელექტროობის დაპროექტება</li>
-                        <li className="redEgg twoLineRectangle">დაცვის სისტემის დაყენება და შეკეთება</li>
-                        <li className="redEgg twoLineRectangle">ელექტრო სამუშაოები (ბინა, კოტეჯი, ოფისი)</li>
+                        <li className="twoLineRectangle">ელექტრო სამუშაოები (ბინა, კოტეჯი, ოფისი)</li>
                         <li className="oneLineRectangle">კაბელების მონტაჟი</li>
-                        <li className="redEgg twoLineRectangle">შიდა და გარე განათების <br/> მონტაჟი</li>
-                        <li className="oneLineRectangle">იატაკქვეშა გათბობის მონტაჟი</li>
-                        <li className="redEgg twoLineRectangle">ელექტრობლოკების დაყენება და შეცვლა</li>
-                        <li className="redEgg twoLineRectangle">მაღალი ძაბვის გენერატორების დამონტაჟება</li>
+                        <li className="oneLineRectangle">ელექტრობლოკების დაყენება და შეცვლა</li>
                     </ul>
                 </div>
             </div>
