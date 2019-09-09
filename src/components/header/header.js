@@ -7,7 +7,8 @@ import "./mobile-header.css";
 import axios from 'axios';
 
 //helper functions
-import {validateElement} from '../../validators/simple_validator'
+import {validateElement} from '@/helper_functions/simple_validator'
+import {sendGetRequest} from '@/helper_functions/axios_request'
 
 import "./header.css"
 
@@ -47,6 +48,7 @@ class Header extends React.Component{
             validateElement(this.refs.customer_phone, "გთხოვთ სწორად შეიყვანოთ ტელეფონი", "ტელეფონის ნომერი")
         }
         else{
+            sendGetRequest(this.state.customer_name,"","",this.state.customer_phone,"")
             this.setState({
                 showPopUp: !this.state.showPopUp
             })
@@ -154,11 +156,11 @@ class Header extends React.Component{
                         <div className="rightsideInfo">
                             <h2>გესაჭიროება კონსულტაცია?</h2>
                             <h3>დასაკავშირებლად შეაფსეთ ფორმა</h3>
-                            <form>
+                            <form onSubmit={(e) => this.handlePopUp(e)}>
                                 <input onChange={this.handleRequestCallFields} type="text" ref="customer_name" name="customer_name" maxLength="50" placeholder="სახელი"/>
                                 <input onChange={this.handleRequestCallFields} type="text" ref="customer_phone" name="customer_phone" maxLength="9" placeholder="ტელეფონის ნომერი"/>
                                 {/* <input required type="submit" value="sadas"/> */}
-                                <input required onClick={(e) => this.handlePopUp(e)} className="button" type="submit" value="მოითხოვე ზარი"/>
+                                <input required className="button" type="submit" value="მოითხოვე ზარი"/>
                             </form>
                         </div>
                     </div>

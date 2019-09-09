@@ -5,7 +5,8 @@ import "./mobile-order.css";
 import "../popup/popup.css";
 
 //helper functions
-import {validateElement} from '../../validators/simple_validator'
+import {validateElement} from '@/helper_functions/simple_validator'
+import {sendGetRequest} from '@/helper_functions/axios_request'
 
 import {PopUp} from "../../components/popup/popup"
 
@@ -40,6 +41,7 @@ class Order extends React.Component{
             validateElement(this.refs.customer_task, "გთხოვთ შეიყვანოთ სამუშაოს ტიპი", "სამუშაოს ტიპი")
         }
         else{
+            sendGetRequest(this.state.customer_name,"","",this.state.customer_phone,this.state.customer_task,this.state.customer_address)
             this.setState({
                 showPopUp: !this.state.showPopUp
             })

@@ -1,10 +1,10 @@
 import React from "react";
 import { faFacebook, faGooglePlus } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import axios from 'axios';
 
 //helper functions
-import {validateElement} from '../../validators/simple_validator'
+import {validateElement} from '@/helper_functions/simple_validator'
+import {sendGetRequest} from '@/helper_functions/axios_request'
 
 import {PopUp} from "../popup/popup";
 
@@ -43,18 +43,7 @@ class Contact extends React.Component{
             validateElement(this.refs.customer_text, "გთხოვთ შეიყვანოთ შეკითხვა", "შეკითხვა")
         }
         else{
-            axios.get("http://localhost:3000/sendmail/", {params: {
-                customer_name: this.state.customer_name,
-                customer_email: this.state.customer_email,
-                customer_text: this.state.customer_text
-            }})
-            .then(response => {
-                console.log(response)
-            })
-            .catch(error => {
-                console.log(error)
-
-            })
+            sendGetRequest(this.state.customer_name,this.state.customer_email,this.state.customer_text)
             this.setState({
                 showPopUp: !this.state.showPopUp
             })
