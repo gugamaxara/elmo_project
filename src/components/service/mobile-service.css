@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 
     .service{
         height: 515px;
@@ -30,24 +30,15 @@
         margin-bottom: 24px;
         font-size: 18px;
         border: 2px solid #464247;
-        padding-top: 0;
-        margin-right: 0;
-        
-        
+        line-height: 60px;
+        letter-spacing: 1px;
     }
 
-    .service .mainServices ul li.redEgg{
-        padding-top: 0;
-        height: 60px;
-    }
-
-    .service .mainServices ul li.oneLineRectangle{
-        line-height: 65px;
-    }
 
     .service .mainServices ul li.twoLineRectangle{
         line-height: 20px;
-        padding-top: 15px;
-        height: 45px;
-    }
+        padding-top: 10px;
+        height: 55px;
+    } 
+
 }

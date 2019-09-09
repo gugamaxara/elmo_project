@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     .about{
         height: 500px;
     }
@@ -21,7 +21,7 @@
     }
 }
 
-@media screen and (device-aspect-ratio: 40/71) {
+@media screen and (max-width: 320px) {
     .about .aboutUsInfo{
         top: 20%;
         left: 5%;;

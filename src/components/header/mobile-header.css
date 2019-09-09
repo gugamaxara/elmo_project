@@ -73,7 +73,7 @@
     height: 35px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     .header{
         height: 550px;
     }  
@@ -146,7 +146,7 @@
     }
   }
 
-  @media screen and (device-aspect-ratio: 40/71) {
+  @media screen and (max-width: 320px) {
     .mobileHeader .wrapper .icons ul li{
         display: inline-block;
         cursor: pointer;
@@ -154,7 +154,7 @@
         padding: 5px 0 0 0;
     }
     .header .headerHeart .leftside .leftsideInfo h2{
-        font-size: 30px;
+        font-size: 26px;
         line-height: 30px;
         padding-top: 0;
     }

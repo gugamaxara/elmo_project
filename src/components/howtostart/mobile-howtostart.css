@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     .howToStart{
         height: 495px;
     }
@@ -80,7 +80,7 @@
 }
 
 
-@media screen and (device-aspect-ratio: 40/71) {
+@media screen and (max-width: 320px) {
     .howToStart{
         height: 615px;
     }
