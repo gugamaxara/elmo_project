@@ -57,9 +57,9 @@
 .service .mainServices ul li{
     display: block;
     float: left;
-    width: 31%;
+    width: 48%;
     height: 72px;
-    margin-right: 2.33%;
+    margin-right: 2%;
     text-align: center;
     margin-bottom: 48px;
     background-color: #ffffff;
@@ -67,10 +67,4 @@
     font-size: 20px;
     font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
     line-height: 78px;
-}
-
-.service .mainServices ul li.redEgg{
-    padding-top: 18px;
-    height: 54px;
-    line-height: 23px;
 }
