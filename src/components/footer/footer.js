@@ -29,7 +29,7 @@ class Footer extends React.Component{
                     </div>
                     <div className="footerContact"> 
                         <span>+995 555 55 55 55</span>
-                        <span className="redEgg">something@gmail.com</span>
+                        <span className="redEgg">company.elmo@gmail.com</span>
                     </div>
                     <div className="orderButton">
                         <a  onClick={() => this.handleScrollView("order-page")}>შეკვეთა</a>

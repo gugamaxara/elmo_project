@@ -1,14 +1,14 @@
 @media only screen and (max-width: 800px) {
 
     .service{
-        height: 515px;
+        height: 540px;
     }
 
     .service .serviceBackground{
         display: none;
     }
     .service .serviceName {
-        top: 55px;
+        top: 65px;
     }
 
     .service .serviceName h1{
@@ -18,10 +18,10 @@
     }
 
     .service .mainServices{
-        top: 120px;
+        top: 130px;
         width: 90%;
-        left: 5%;
-        height: 85%;
+        left: 4.5%;
+        height: auto;
     }
 
     .service .mainServices ul li{
@@ -32,13 +32,27 @@
         border: 2px solid #464247;
         line-height: 60px;
         letter-spacing: 1px;
+        margin-right: 0;
     }
 
 
     .service .mainServices ul li.twoLineRectangle{
         line-height: 20px;
         padding-top: 10px;
-        height: 55px;
+        height: 50px;
     } 
 
 }
+
+@media screen and (max-width: 320px) {
+    .service{
+        height: 515px;
+    }
+    .service .serviceName {
+        top: 55px;
+    }
+
+    .service .mainServices{
+        top: 120px;
+    }
+  }

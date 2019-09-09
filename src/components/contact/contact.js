@@ -103,7 +103,7 @@ class Contact extends React.Component{
                         <span className="phoneNumber">ტელეფონის ნომერი</span>
                         <span>+995 555 55 55 55</span>
                         <span className="mail">ელექტრონული ფოსტა</span>
-                        <span>something@gmail.com</span>
+                        <span>company.elmo@gmail.com</span>
                         <span className="place">ადგილმდებარეობა</span>
                         <p>თბილისი, საქართველო</p>
                         <div className="socialNetwork">
