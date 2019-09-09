@@ -67,4 +67,11 @@
     font-size: 20px;
     font-family: 'BPG Nino Mtavruli Bold', 'BPG Nino Mtavruli';
     line-height: 78px;
+    letter-spacing: 3px;
+}
+
+.service .mainServices ul li.twoLineRectangle{
+    line-height: 25px;
+    padding-top: 13px;
+    height: 59px;
 }
