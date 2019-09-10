@@ -83,8 +83,6 @@ html, body, .app {
     margin: 12px 0 0 0;
 }
 
-
-
  .mobile_popup_inner{
     position: fixed;
     left: 0;
@@ -140,7 +138,6 @@ html, body, .app {
     .popup .popup_inner {
         width: 250px;
         height: 150px;
-        margin: 0;
     }
 
     .popup .popup_inner .closeButton{
@@ -168,4 +165,7 @@ html, body, .app {
         font-size: 10px;
     }
 
+
+
 }
+
