@@ -138,7 +138,6 @@ html, body, .app {
     .popup .popup_inner {
         width: 250px;
         height: 150px;
-        left: 11%;
     }
 
     .popup .popup_inner .closeButton{
@@ -170,12 +169,10 @@ html, body, .app {
 
 }
 
-/* @media only screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) {
 
     .popup .popup_inner {
-        width: 250px;
-        height: 150px;
         left: 11%;
     }
     
-} */
+}
