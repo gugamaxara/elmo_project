@@ -87,7 +87,11 @@
 
 @media screen and (max-width: 320px) {
     .advantages{
-        height: 620px;
+        height: 630px;
+    }
+
+    .advantages .wrapper{
+        top: 126px;
     }
 
     .advantages .wrapper ul li.workerIcon{
@@ -111,8 +115,6 @@
         margin-left: 15px;
     }
     
-    .advantages .wrapper{
-        top: 116px;
-    }
+    
 
   }

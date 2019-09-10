@@ -138,8 +138,8 @@ html, body, .app {
 
 @media only screen and (max-width: 800px) {
     .popup .popup_inner {
-        width: 200px;
-        height: 100px;
+        width: 250px;
+        height: 150px;
         margin: 0;
     }
 
@@ -167,4 +167,5 @@ html, body, .app {
     .popup .popup_inner .popupInfo p{
         font-size: 10px;
     }
+
 }

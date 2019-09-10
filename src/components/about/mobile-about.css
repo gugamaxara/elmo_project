@@ -22,6 +22,9 @@
 }
 
 @media screen and (max-width: 320px) {
+    .about{
+        height: 510px;
+    }
     .about .aboutUsInfo{
         top: 110px;
     }
