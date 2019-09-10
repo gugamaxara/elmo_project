@@ -100,7 +100,7 @@ html, body, .app {
     width: 90%;
     height: 70%;
     margin: 0 auto;
-    padding-top: 14%;
+    padding-top: 60px;
 }
 
  .mobile_popup_inner .mobile_menu ul{
@@ -136,7 +136,7 @@ html, body, .app {
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     .popup .popup_inner {
         width: 200px;
         height: 100px;
