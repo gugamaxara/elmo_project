@@ -3,14 +3,15 @@ import React from "react";
 import "./service.css"
 import "./mobile-service.css"
 
-import servicepic from "../../image/service.png"
+import ServiceImage from "../../image/service.png"
 
 class Service extends React.Component{
     render(){
         return(
             <div className="service" id="service-page">
                 <div className="serviceBackground">
-                    <img alt="service background" src={servicepic}/>
+                    <img alt="service background" src={ServiceImage}/>
+                    <h1></h1>
                 </div>
                 
                 <div className="serviceName">

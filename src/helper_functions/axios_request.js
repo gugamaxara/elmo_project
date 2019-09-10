@@ -15,5 +15,5 @@ axios.get("http://localhost:3000/sendmail/", {params: {
 .catch(error => {
     console.log(error)
 
-})
+    })
 }
