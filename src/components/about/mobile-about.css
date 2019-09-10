@@ -3,7 +3,7 @@
         height: 500px;
     }
     .about .aboutUsInfo{
-        top: 27%;
+        top: 145px;
         left: 5%;;
         width: 90%;
         height: 65%;
@@ -11,7 +11,7 @@
     }
 
     .about h1{
-        top: 60px;
+        top: 75px;
         left: 25%;
         font-size: 24px
     }
@@ -23,10 +23,10 @@
 
 @media screen and (max-width: 320px) {
     .about .aboutUsInfo{
-        top: 20%;
+        top: 110px;
     }
     .about h1{
-        top: 50px;
+        top: 75px;
         left: 20%;
         font-size: 22px
     }

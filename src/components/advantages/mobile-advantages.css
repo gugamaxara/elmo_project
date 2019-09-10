@@ -1,9 +1,9 @@
 @media only screen and (max-width: 800px) {
     .advantages{
-        height: 525px;
+        height: 545px;
     }
     .advantages .advantagesName{
-        top: 65px;
+        top: 75px;
     }
 
     .advantages .advantagesName h1{
@@ -14,7 +14,7 @@
 
     .advantages .wrapper{
         left: 5%;
-        top: 96px;
+        top: 106px;
         width: 90%;
         height: 70%;
     }
@@ -87,19 +87,7 @@
 
 @media screen and (max-width: 320px) {
     .advantages{
-        height: 570px;
-    }
-
-    .advantages .advantagesName{
-        top: 55px;
-    }
-
-
-    .advantages .wrapper{
-        left: 5%;
-        top: 106px;
-        width: 90%;
-        height: 70%;
+        height: 610px;
     }
 
     .advantages .wrapper ul li.workerIcon{

@@ -1,9 +1,9 @@
 @media only screen and (max-width: 800px) {
     .howToStart{
-        height: 495px;
+        height: 515px;
     }
     .howToStart .howToStartName{
-        top: 65px;
+        top: 75px;
     }
 
     .howToStart .howToStartName h1{
@@ -14,7 +14,7 @@
 
     .howToStart .wrapper{
         left: 5%;
-        top: 96px;
+        top: 106px;
         width: 90%;
         height: 65%;
     }
@@ -82,18 +82,7 @@
 
 @media screen and (max-width: 320px) {
     .howToStart{
-        height: 615px;
-    }
-
-    .howToStart .howToStartName{
-        top: 55px;
-    }
-
-    .howToStart .wrapper{
-        left: 5%;
-        top: 86px;
-        width: 90%;
-        height: 65%;
+        height: 655px;
     }
 
     .howToStart .wrapper ul li{
