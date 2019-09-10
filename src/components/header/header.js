@@ -80,10 +80,12 @@ class Header extends React.Component{
     }
 
     handleScroll = () => {
-        if(window.pageYOffset > 72) {
+        var isTouchDevice = 'ontouchstart' in document.documentElement;
+        if(isTouchDevice) {
             document.getElementById("mobileHeader").classList.add('sticky');
         }
     }
+
 
     render(){
         return(

@@ -30,7 +30,7 @@ export class PopUp extends React.Component{
 export class MobilePopup extends React.Component{
     handleScrollView = id =>{
       var element = document.getElementById(id);
-      element.scrollIntoView({behavior: "smooth", inline: "nearest"});
+      element.scrollIntoView({behavior: "smooth", block: "center", inline: "start"})
       this.props.closeButton();
   }
 
@@ -40,7 +40,7 @@ export class MobilePopup extends React.Component{
       return (
             <div className='mobile_popup_inner'>
               <div className="mobile_menu">
-                <ul onTouchStart="">
+                <ul>
                   <li onClick={() => this.handleScrollView("about-page")}>ჩვენს შესახებ</li>
                   <li onClick={() => this.handleScrollView("service-page")}>სერვისები</li>
                   <li onClick={() => this.handleScrollView("howtostart-page")}>როგორ დავიწყოთ?</li>
