@@ -13,10 +13,12 @@
 
     .order form{
         top: 170px;
-        left: 4%;
+        left: 5%;
         width: 90%;
         height: 384px;
     }
+
+    
 
     .order form input.redEgg{
         margin-bottom: 48px;
@@ -29,5 +31,16 @@
     }
     .order form{
         top: 180px;
+        left: 5%;
+    }
+
+    .order form input{
+        width: 75%;
+        margin: 0 auto 24px;
+        font-size: 12px;
+    }
+
+    .order form .button{
+        width: 80%;
     }
 }
