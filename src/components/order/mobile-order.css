@@ -13,11 +13,10 @@
 
     .order form{
         top: 170px;
-        left: 5%;
+        left: 4%;
         width: 90%;
         height: 384px;
     }
-
     
 
     .order form input.redEgg{
@@ -41,6 +40,6 @@
     }
 
     .order form .button{
-        width: 81%;
+        width: 80%;
     }
 }
