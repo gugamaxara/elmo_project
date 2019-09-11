@@ -49,7 +49,7 @@ class Footer extends React.Component{
                             </ul>
                         </div>
                     <div className="footerCopyright">
-                            <span>ელმო</span>
+                            <span> © 2019 ელმო</span>
                     </div>
                 </div>
             </div>
