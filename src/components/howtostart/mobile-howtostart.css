@@ -29,7 +29,7 @@
         margin-bottom: 0;
         height: 85px;
         margin-right: 0;
-        margin-top: 25px;
+        margin-top: 20px;
     }
 
     .howToStart .wrapper ul li.calendarIcon{
@@ -57,6 +57,7 @@
         width: 36px;
         height: 48px;
         margin-left: 20px;
+        margin-bottom: 40px;
     }
 
     .howToStart .wrapper ul li.dealIcon img{
@@ -64,7 +65,7 @@
         height: 30px;
         margin-top: 0;
         margin-right: 15px;
-        margin-bottom: 55px;
+        margin-bottom: 50px;
     }
 
     .howToStart .wrapper ul li h3{
