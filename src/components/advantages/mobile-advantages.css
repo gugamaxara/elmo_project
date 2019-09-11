@@ -1,6 +1,6 @@
 @media only screen and (max-width: 800px) {
     .advantages{
-        height: 545px;
+        height: 560px;
     }
     .advantages .advantagesName{
         top: 75px;
@@ -29,16 +29,7 @@
         margin-bottom: 0;
         height: 85px;
         margin-right: 0;
-    }
-
-    .advantages .wrapper ul li.dealIcon{
-        height: 85px;
-    }
-
-    .advantages .wrapper ul li.workerIcon{
-        height: 90px;
-    }
-    
+    } 
 
     .advantages .wrapper ul li img{
         width: 40px;
@@ -52,14 +43,20 @@
         width: 44px;
         height: 48px;
         margin-right: 20px;
+        margin-bottom: 37px;
     }
 
+    .advantages .wrapper ul li.dealIcon{
+        margin-top: 20px;
+    }
     .advantages .wrapper ul li.dealIcon img{
         width: 50px;
         height: 30px;
-        margin: 0 17px 40px 12px;
+        margin: 0 17px 50px 12px;
     }
-
+    .advantages .wrapper ul li.timeIcon{
+        margin-top: 20px;
+    }
     .advantages .wrapper ul li.timeIcon img{
         width: 45px;
         height: 45px;
@@ -85,7 +82,7 @@
 
 
 
-@media screen and (max-width: 320px) {
+ @media screen and (max-width: 320px) {
     .advantages{
         height: 630px;
     }
@@ -95,11 +92,11 @@
     }
 
     .advantages .wrapper ul li.workerIcon{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .advantages .wrapper ul li.dealIcon{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .advantages .wrapper ul li.workerIcon img{
@@ -114,7 +111,4 @@
     .advantages .wrapper ul li.timeIcon img{
         margin-left: 15px;
     }
-    
-    
-
-  }
+  } 

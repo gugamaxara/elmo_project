@@ -110,19 +110,24 @@
     }
 
     .header .headerHeart{
-        height: 60%;
+        width: 100%;
+        height: 408px;
+        left: 0;
         top: 144px;
+
     }
 
     .header .headerHeart .leftside{
         width: 100%;
-        margin-top: 10px;
-    }
-
-    .header .headerHeart .leftside .leftsideInfo{
-        width: 100%;
         height: 100%;
         margin: 0;
+    }
+    
+    .header .headerHeart .leftside .leftsideInfo{
+        display: block;
+        width: 90%;
+        height: 60%;
+        margin: 0 auto;
     }
 
     .header .headerHeart .leftside .leftsideInfo h2{
@@ -143,10 +148,10 @@
         position: fixed;
         top: 0;
         left: 0;
-    }
+    } 
   }
 
-  @media screen and (max-width: 320px) {
+   @media screen and (max-width: 320px) {
     .mobileHeader .wrapper .icons ul li{
         margin: 0 0 0 10px;
     }
@@ -166,4 +171,6 @@
         padding: 0;
         line-height: 25px;
     }
-  }
+  } 
+
+  

@@ -1,6 +1,6 @@
 @media only screen and (max-width: 800px) {
     .howToStart{
-        height: 515px;
+        height: 600px;
     }
     .howToStart .howToStartName{
         top: 75px;
@@ -16,7 +16,7 @@
         left: 5%;
         top: 106px;
         width: 90%;
-        height: 65%;
+        height: auto;
     }
 
     .howToStart .wrapper ul{
@@ -29,6 +29,7 @@
         margin-bottom: 0;
         height: 85px;
         margin-right: 0;
+        margin-top: 20px;
     }
 
     .howToStart .wrapper ul li.calendarIcon{
@@ -63,6 +64,7 @@
         height: 30px;
         margin-top: 0;
         margin-right: 15px;
+        margin-bottom: 50px;
     }
 
     .howToStart .wrapper ul li h3{
@@ -86,7 +88,6 @@
     }
 
     .howToStart .wrapper ul li{
-        margin-bottom: 30px;
         height: 95px;
     }
 
